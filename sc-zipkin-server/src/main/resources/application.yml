@@ -1,0 +1,8 @@
+server:
+  port: 9666
+spring:
+  application:
+    name: sc-zipkin-server
+eureka:
+  instance:
+    prefer-ip-address: true
