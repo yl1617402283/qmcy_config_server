@@ -5,7 +5,7 @@
     <groupId>com.yhyy</groupId>
     <packaging>pom</packaging>
     <version>0.0.1</version>
-    <artifactId>yhyy-gatw</artifactId>
+    <artifactId>sc-base</artifactId>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -14,7 +14,12 @@
     </parent>
 
     <modules>
-        <module>yhyy-zuul</module>
+        <module>sc-config-client</module>
+        <module>sc-config-client-kafka</module>
+        <module>sc-config-server</module>
+        <module>sc-config-server-kafka</module>
+        <module>sc-eureka-server</module>
+        <module>sc-zipkin-server</module>
     </modules>
 
     <properties>
