@@ -15,6 +15,7 @@ mybatis-config.xml
 # Log file
 *.log
 
+
 # BlueJ files
 *.ctxt
 
