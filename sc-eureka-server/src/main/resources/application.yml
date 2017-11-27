@@ -26,13 +26,13 @@ server:
   port: 8669
 eureka:
   instance:
-    hostname: peer1
+    prefer-ip-address: true
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 2000
   client:
     serviceUrl:
-      defaultZone: http://peer2:8669/eureka/,http://peer3:8669/eureka/
+      defaultZone: http://192.168.2.228:8669/eureka/,http://192.168.2.225:8669/eureka/
 ---
 spring:
   profiles: prod2
@@ -40,13 +40,13 @@ server:
   port: 8669
 eureka:
   instance:
-    hostname: peer2
+    prefer-ip-address: true
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 2000
   client:
     serviceUrl:
-      defaultZone: http://peer1:8669/eureka/,http://peer3:8669/eureka/
+      defaultZone: http://192.168.2.226:8669/eureka/,http://192.168.2.225:8669/eureka/
 ---
 spring:
   profiles: prod3
@@ -54,10 +54,10 @@ server:
   port: 8669
 eureka:
   instance:
-    hostname: peer3
+    prefer-ip-address: true
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 2000
   client:
     serviceUrl:
-      defaultZone: http://peer1:8669/eureka/,http://peer2:8669/eureka/
+      defaultZone: http://192.168.2.226:8669/eureka/,http://192.168.2.228:8669/eureka/
