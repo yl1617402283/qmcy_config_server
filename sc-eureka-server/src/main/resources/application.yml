@@ -10,5 +10,38 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8669/eureka/
 
-# 参考文档：http://projects.spring.io/spring-cloud/docs/1.0.3/spring-cloud.html#_standalone_mode
-# 参考文档：http://my.oschina.net/buwei/blog/618756
+---
+spring:
+  profiles: test
+
+---
+spring:
+  profiles: alidev
+
+---
+spring:
+  profiles: prod1
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:8669/eureka/,http://peer3:8669/eureka/
+---
+spring:
+  profiles: prod2
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8669/eureka/,http://peer3:8669/eureka/
+---
+spring:
+  profiles: prod3
+eureka:
+  instance:
+    hostname: peer3
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:8669/eureka/,http://peer3:8669/eureka/
