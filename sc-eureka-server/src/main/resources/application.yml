@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: sc-eureka-server
+
 server:
   port: 8669                    # 指定该Eureka实例的端口
 eureka:
@@ -7,7 +11,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8669/eureka/
-
 ---
 spring:
   profiles: test
