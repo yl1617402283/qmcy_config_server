@@ -3,12 +3,6 @@
 *.iml
 /.idea/
 
-#Spring Boot&Spring Cloud
-application.yml
-application.properties
-bootstrap.properties
-mybatis-config.xml
-
 # Compiled class file
 *.class
 
