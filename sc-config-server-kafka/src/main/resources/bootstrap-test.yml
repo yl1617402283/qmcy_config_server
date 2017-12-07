@@ -1,0 +1,28 @@
+server:
+  port: 7861
+spring:
+  application:
+    name: sc-config-server-kafka
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@gitee.com:cpkug/yhyyrepo.git
+          search-paths: rd4dev
+          username: yhyyww@yeah.net
+          password: yhyy2017
+          basedir: /data/config-repo
+    stream:
+      kafka:
+        binder:
+          brokers: 172.19.172.253:9092,172.19.172.254:9092,172.19.172.255:9092
+          zk-nodes: 172.19.172.253:2181,172.19.172.254:2181,172.19.172.255:2181
+    bus:
+      trace:
+        enabled: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8669/eureka/

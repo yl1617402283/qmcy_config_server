@@ -1,0 +1,28 @@
+server:
+  port: 7861
+spring:
+  application:
+    name: sc-config-server-kafka
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://git.yuehuayueyou.com/RD_Center/yhyy-repo.git
+          search-paths: aliprod
+          username: mxy
+          password: mxy123
+          basedir: /data/config-repo
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.2.191:9092,192.168.2.195:9092,192.168.2.196:9092
+          zk-nodes: 192.168.2.191:2181,192.168.2.195:2181,192.168.2.196:2181
+    bus:
+      trace:
+        enabled: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.2.225:8669/eureka/,http://192.168.2.226:8669/eureka/,http://192.168.2.228:8669/eureka/
