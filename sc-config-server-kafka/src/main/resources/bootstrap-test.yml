@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: git@gitee.com:cpkug/yhyyrepo.git
+          uri: https://gitee.com/cpkug/yhyyrepo.git
           search-paths: rd4dev
           username: yhyyww@yeah.net
           password: yhyy2017
