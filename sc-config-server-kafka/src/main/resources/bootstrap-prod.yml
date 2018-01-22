@@ -54,3 +54,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://192.168.2.225:8669/eureka/,http://192.168.2.226:8669/eureka/,http://192.168.2.228:8669/eureka/
+
+management:
+  security:
+    enabled: false
