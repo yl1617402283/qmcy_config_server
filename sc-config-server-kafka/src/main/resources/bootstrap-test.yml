@@ -12,6 +12,7 @@ spring:
           username: yhyyww@yeah.net
           password: yhyy2017
           basedir: /data/config-repo
+          force-pull: trueg
     stream:
       kafka:
         binder:
