@@ -11,7 +11,7 @@ spring:
           search-paths: rd4test
           username: yhyyww@yeah.net
           password: yhyy2017
-          basedir: /data/config-repo
+#          basedir: /data/config-repo
     stream:
       kafka:
         binder:
