@@ -11,6 +11,7 @@ spring:
           search-paths: rd4test
           username: yhyyww@yeah.net
           password: yhyy2017
+          force-pull: true
 #          basedir: /data/config-repo
     stream:
       kafka:
