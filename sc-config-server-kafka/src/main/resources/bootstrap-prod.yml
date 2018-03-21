@@ -9,6 +9,7 @@ spring:
         git:
           uri: ssh://git@git.yuehuayueyou.com:60800/RD_Center/yhyy-repo.git
           search-paths: aliprod
+          force-pull: true
           ignore-local-ssh-settings: true
           basedir: /data/config-repo
           private-key: |
