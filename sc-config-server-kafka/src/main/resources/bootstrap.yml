@@ -7,10 +7,10 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/cpkug/yhyyrepo.git
-          search-paths: rd4test
-          username: yhyyww@yeah.net
-          password: yhyy2017
+          uri: http://code.yuehuayueyou.com:3000/yhyy/yhyyrepo.git
+          search-paths: local
+          username: yhyy
+          password: yhyy@2018
           force-pull: true
 #          basedir: /data/config-repo
     stream:
