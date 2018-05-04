@@ -8,9 +8,10 @@ spring:
       server:
         git:
           uri: https://gitee.com/cpkug/yhyyrepo/                             # 配置Git仓库的地址
-          search-paths: rd4dev                                              # 子目录查询
-          username:                                                         # Git仓库的账号
-          password:                                                         # Git仓库的密码
+          search-paths: wenw                                              # 子目录查询
+          username: yhyyww@yeah.net
+          password: yhyy2017                                                       # Git仓库的密码
+          basedir: /data/config-repo
 
 eureka:
   client:
