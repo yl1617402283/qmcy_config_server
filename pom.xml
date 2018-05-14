@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.yhyy</groupId>
+    <groupId>com.qmcy</groupId>
     <packaging>pom</packaging>
     <version>0.0.1</version>
-    <artifactId>sc-base</artifactId>
+    <artifactId>qmcy_config_server</artifactId>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -14,12 +14,7 @@
     </parent>
 
     <modules>
-        <module>sc-config-client</module>
-        <module>sc-config-client-kafka</module>
-        <module>sc-config-server</module>
-        <module>sc-config-server-kafka</module>
-        <module>sc-eureka-server</module>
-        <module>sc-zipkin-server</module>
+        <module>configserver</module>
     </modules>
 
     <properties>
